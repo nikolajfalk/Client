@@ -7,12 +7,15 @@ $(document).ready(function () {
             lastName: $("#createLastName").val(),
             userName: $("#createUserName").val(),
             email: $("#createEmail").val(),
-            password: $("#createPassword").val()
+            password: $("#createPassword").val(),
+            userType: true
         };
 
         SDK.User.create(user, function (err, data) {
             if (err);
 
+            alert("Bruger oprettet")
+            window.location.href ="login.html"
         });
     })
 });
