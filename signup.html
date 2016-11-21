@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+<!-- Det her er min navbar -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Bookit</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Forside <span class="sr-only">(current)</span></a></li>
+                <li><a href="books.html">Bøger</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <div class="form">
+        <h1>Opret en bruger gratis</h1>
+        <div class="top-row">
+            <div class="field-wrap">
+                <input type="text" id="createFirstName" placeholder="Fornavn"/>
+            </div>
+            <div class="field-wrap">
+                <input type="text" id="createLastName" placeholder="Efternavn"/>
+            </div>
+        </div>
+        <div class="field-wrap">
+            <input type="text" id="createUserName" placeholder="Brugernavn"/>
+        </div>
+        <div class="field-wrap">
+            <input type="text" id="createEmail" placeholder="E-mail"/>
+        </div>
+        <div class="field-wrap">
+            <input type="password" id="createPassword" placeholder="Adgangskode"/>
+        </div>
+        <button type="submit" id="btnCreateUser" class="button button-block"/>
+        Forsæt</button>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript" src="lib/js/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="js/sdk.js"></script>
+<script type="text/javascript" src="js/signup.page.js"></script>
+<script type="text/javascript" src="lib/js/bootstrap.js"></script>
+
+</body>
+
+</html>
