@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a01c468a-c8b7-41e4-94bb-3a5aff70d580" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/curriculum.page.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/semester.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/signup.page.js" afterPath="$PROJECT_DIR$/js/signup.page.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup.html" afterPath="$PROJECT_DIR$/signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/curriculum.html" afterPath="$PROJECT_DIR$/curriculum.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/sdk.js" afterPath="$PROJECT_DIR$/js/sdk.js" />
     </list>
     <ignored path="Client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,33 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="signup.page.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/signup.page.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/signup.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
-              <folding>
-                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sdk.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sdk.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/sdk.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+            <state relative-caret-position="480">
+              <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -82,15 +62,17 @@
         <option value="$PROJECT_DIR$/lib/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/sdk.js" />
         <option value="$PROJECT_DIR$/js/login.page.js" />
         <option value="$PROJECT_DIR$/js/books.page.js" />
         <option value="$PROJECT_DIR$/js/index.page.js" />
         <option value="$PROJECT_DIR$/books.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/curriculum.html" />
         <option value="$PROJECT_DIR$/signup.html" />
         <option value="$PROJECT_DIR$/js/signup.page.js" />
+        <option value="$PROJECT_DIR$/semester.html" />
+        <option value="$PROJECT_DIR$/curriculum.html" />
+        <option value="$PROJECT_DIR$/js/curriculum.page.js" />
+        <option value="$PROJECT_DIR$/js/sdk.js" />
       </list>
     </option>
   </component>
@@ -160,20 +142,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -289,7 +257,7 @@
       <workItem from="1479717796738" duration="931000" />
       <workItem from="1479733176716" duration="5248000" />
       <workItem from="1479744253552" duration="240000" />
-      <workItem from="1479801379959" duration="2785000" />
+      <workItem from="1479801379959" duration="6017000" />
     </task>
     <task id="LOCAL-00001" summary="CreateUser virker!">
       <created>1479736757806</created>
@@ -305,11 +273,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479740494854</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Du kan ikke længere oprette en bruger uden at indtaste alle oplysninger.">
+      <created>1479989470193</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1479989470193</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72238000" />
+    <option name="totallyTimeSpent" value="75470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
@@ -364,7 +339,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CreateUser virker!" />
-    <option name="LAST_COMMIT_MESSAGE" value="CreateUser virker!" />
+    <MESSAGE value="Du kan ikke længere oprette en bruger uden at indtaste alle oplysninger." />
+    <option name="LAST_COMMIT_MESSAGE" value="Du kan ikke længere oprette en bruger uden at indtaste alle oplysninger." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -373,21 +349,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/login.page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sdk.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -606,20 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/books.page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/books.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="66" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="73" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/index.page.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -648,25 +595,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/curriculum.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="42" column="59" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
           <caret line="13" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sdk.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -683,8 +615,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/signup.page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="64" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/books.page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/semester.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/curriculum.page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/curriculum.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sdk.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
           <folding />
         </state>
       </provider>

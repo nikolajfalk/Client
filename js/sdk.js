@@ -36,6 +36,12 @@ var SDK = {
         }
     },
 
+    Curriculum: {
+        getAll: function (cb) {
+            SDK.request({method:"GET", url: "/curriculum"}, cb);
+        }
+    },
+
     logOut: function () {
         SDK.Storage.remove("tokenId");
         SDK.Storage.remove("userId");

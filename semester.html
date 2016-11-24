@@ -29,8 +29,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="index.html">Forside <span class="sr-only">(current)</span></a></li>
-                <li class="active"><a href="books.html">Bøger</a></li>
+                <li class="active"><a href="index.html">Forside <span class="sr-only">(current)</span></a></li>
+                <li><a href="books.html">Bøger</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="login.html">Login</a></li>
@@ -39,30 +39,39 @@
     </div><!-- /.container-fluid -->
 </nav>
 
-<div class="container">
-    <div class="page-header">
-        <h1>Pensumliste</h1>
+<div class="form">
+    <h1 class="head-curriculum">Vælg uddannelsesinstitution, studieretning og semester</h1>
+
+    <div class="dropdown">
+        <select id="box1">
+            <option value="" selected>Uddannelsesinstitution</option>
+            <option value="1">CBS</option>
+        </select><br/>
+
+        <select id="box2">
+            <option value="" selected>Studieretning</option>
+            <option value="1">HA(IT)</option>
+            <option value="2">HA(MAT)</option>
+        </select><br/>
+
+        <select id="box3">
+            <option value="" selected>Semester</option>
+            <option value="1">1. Semester</option>
+            <option value="2">3. Semester</option>
+            <option value="2">5. Semester</option>
+        </select><br/>
+
     </div>
+    <button id="btnCurriculum">Find pensumliste</button>
 
-    <table class="table">
-        <thead>
-        <th>Pensumliste ID</th>
-        <th>Skole</th>
-        <th>Studieretning</th>
-        <th>Semester</th>
-        </thead>
-
-        <tbody id="curriculumTableBody">
-
-        </tbody>
-    </table>
 </div>
 
 
 <script type="text/javascript" src="lib/js/jquery-3.1.1.js"></script>
 <script type="text/javascript" src="lib/js/bootstrap.js"></script>
-<script type="text/javascript" src="js/books.page.js"></script>
+<script type="text/javascript" src="js/curriculum.page.js"></script>
 <script type="text/javascript" src="js/sdk.js"></script>
+
 
 </body>
 
