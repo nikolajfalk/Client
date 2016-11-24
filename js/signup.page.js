@@ -10,14 +10,13 @@ $(document).ready(function () {
                 password: $("#createPassword").val(),
                 userType: true
             };
-
+        if(user.firstName ==="" || user.lastName ===""||user.userName ==="" || user.email ==="" || user.password ==="") {
+            alert("Noget gik galt, prøv igen")
+            return
+        }
         SDK.User.create(user, function (err, data) {
-            if (err){
-                alert("Noget gik galt, prøv igen")
-                return
-            }
-            alert("Bruger oprettet")
-            window.location.href ="login.html"
-        });
+             alert("Bruger oprettet")
+             window.location.href = "login.html"
+         });
     })
 });
