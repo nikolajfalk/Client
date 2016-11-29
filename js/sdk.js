@@ -32,7 +32,7 @@ var SDK = {
             SDK.request({method: "POST", url: "/user", data: data}, cb);
         },
         current: function () {
-            return SDK.Storage.load("user");
+            return localStorage.getItem("user");
         }
     },
 

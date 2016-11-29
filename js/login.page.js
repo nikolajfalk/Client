@@ -6,6 +6,8 @@ $(document).ready(function () {
         var username = $("#inputUsername").val();
         var pw = $("#inputPassword").val();
 
+        var currentUser = JSON.parse(localStorage.getItem("user"));
+
         SDK.login(username, pw, function (err, data) {
             //On wrong credentials
             if (err) {

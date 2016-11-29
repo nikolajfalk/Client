@@ -2,7 +2,9 @@ $(document).ready(function () {
 
     //Fires on page-load
     SDK.Curriculum.getCurriculum(function (err, data) {
-        if (err) throw err;
+        if (err) {
+            return
+        }
 
         var decrypted = encryptDecrypt(data);
         decrypted = JSON.parse(decrypted);
