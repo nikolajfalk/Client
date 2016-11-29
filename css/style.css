@@ -142,61 +142,22 @@ body:before {
     margin: 0 0 15px;
 }
 
-.dropdown #box1 {
-    margin: 0 0 10px;
+.page-header #btnCurriculumID {
     outline: 0;
-    background: #f2f2f2;
-    width: 100%;
-    height: 50px;
+    background: #EF3B3A;
     border: 0;
-    padding: 15px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    color: #FFFFFF;
     font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
     cursor: pointer;
 }
+.page-header #inputCurriculum {
 
-.dropdown #box2 {
-    margin: 0 0 10px;
-    outline: 0;
-    background: #f2f2f2;
-    width: 100%;
-    height: 50px;
-    border: 0;
-    padding: 15px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    font-size: 14px;
-    cursor: pointer;
 }
+.page-header #curriculumHeader {
 
-.dropdown #box3 {
-    margin: 0 0 10px;
-    outline: 0;
-    background: #f2f2f2;
-    width: 100%;
-    height: 50px;
-    border: 0;
-    padding: 15px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    font-size: 14px;
-    cursor: pointer;
 }
-
-.head-curriculum {
-    margin: 0 0 35px;
-}
-
-
-
-
 
 
 
