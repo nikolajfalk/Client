@@ -14,7 +14,7 @@ $(document).ready(function () {
             }
 
             //Login OK!
-            window.location.href = "index.html";
+            window.location.href = "frontPage.html";
 
         });
 

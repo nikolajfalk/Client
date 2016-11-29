@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     //Fires on page-load
-    SDK.Curriculum.getAll(function (err, data) {
+    SDK.Curriculum.getCurriculum(function (err, data) {
         if (err) throw err;
 
         var decrypted = encryptDecrypt(data);

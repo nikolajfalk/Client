@@ -4,13 +4,13 @@
 <head>
     <link rel="stylesheet" href="lib/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 
 <body>
 
-<!-- Det her er min navbar -->
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -28,29 +28,34 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Forside <span class="sr-only">(current)</span></a></li>
-                <li><a href="books.html">Bøger</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html">Login</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
 
-<div class="container">
-    <div class="jumbotron">
-        <h1>Hej, velkommen til Bookit</h1>
-        <p><a class="btn btn-primary btn-lg" href="books.html" role="button">Se alle bøger</a></p>
+<div class="form" id="loginForm">
+    <div class="thumbnail"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/hat.svg"/></div>
 
+    <div class="form-group">
+        <input type="text" id="inputUsername" placeholder="Brugernavn"/>
     </div>
+
+    <div class="form-group">
+        <input type="password" id="inputPassword" placeholder="Adgangskode"/>
+    </div>
+
+    <button id="btnLogin">Login</button>
+    <p class="message">Ny bruger? <a href="signup.html">Opret en bruger her</a></p>
 </div>
 
 
 <script type="text/javascript" src="lib/js/jquery-3.1.1.js"></script>
-<script type="text/javascript" src="lib/js/bootstrap.js"></script>
-<script type="text/javascript" src="js/books.page.js"></script>
 <script type="text/javascript" src="js/sdk.js"></script>
+<script type="text/javascript" src="js/login.page.js"></script>
+<script type="text/javascript" src="lib/js/bootstrap.js"></script>
 
 
 </body>

@@ -16,7 +16,7 @@ $(document).ready(function () {
         }
         SDK.User.create(user, function (err, data) {
              alert("Bruger oprettet")
-             window.location.href = "login.html"
+             window.location.href = "index.html"
          });
     })
 });
