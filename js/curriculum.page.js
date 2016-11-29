@@ -19,7 +19,5 @@ $(document).ready(function () {
                 "<td>" + curriculum.semester + "</td>" +
                 "</tr>");
         });
-
     });
-
 });

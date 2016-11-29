@@ -1,5 +1,5 @@
-var SDK = {
 
+var SDK = {
     serverURL: "http://localhost:8080/server2_0_war_exploded",
 
     request: function (options, cb) {
@@ -43,8 +43,7 @@ var SDK = {
     },
 
     logOut: function () {
-        SDK.Storage.remove("tokenId");
-        SDK.Storage.remove("userId");
+        SDK.Storage.remove("token");
         SDK.Storage.remove("user");
     },
 
@@ -61,8 +60,7 @@ var SDK = {
             //On login-error
             if (err) return cb(err);
 
-            SDK.Storage.persist("tokenId", data.id);
-            SDK.Storage.persist("userId", data.userId);
+            SDK.Storage.persist("token", data);
             SDK.Storage.persist("user", data.user);
 
             cb(null, data);
@@ -71,7 +69,7 @@ var SDK = {
     },
 
     Storage: {
-        prefix: "BookStoreSDK",
+        prefix: "BookIT ",
         persist: function (key, value) {
             window.localStorage.setItem(this.prefix + key, (typeof value === 'object') ? JSON.stringify(value) : value)
         },
@@ -98,3 +96,8 @@ function encryptDecrypt(input) {
     }
     return out;
 }
+
+$("#btnLogout").on("click", function(){
+    SDK.logOut();
+    window.location.href = "index.html";
+});
