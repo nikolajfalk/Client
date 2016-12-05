@@ -10,8 +10,6 @@
 
 <body>
 
-
-
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -31,10 +29,11 @@
             <ul class="nav navbar-nav">
                 <li><a href="frontPage.html">Forside <span class="sr-only">(current)</span></a></li>
                 <li><a href="books.html">Bøger</a>
-                <li class="active"><a href="curriculum.html">Pensumlister</a>
+                <li><a  href="curriculum.html">Pensumlister</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="settings.html">Indstillinger</a></li>
                 <li><a id="btnLogout" href="index.html">Logud</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -42,34 +41,34 @@
 </nav>
 
 <div class="container">
-    <div class="page-header">
-        <h1>Se alle bøger</h1>
+    <div class="form">
+        <h1>Opret en bruger gratis</h1>
+        <div class="top-row">
+            <div class="field-wrap">
+                <input type="text" id="createFirstName" placeholder="Fornavn"/>
+            </div>
+            <div class="field-wrap">
+                <input type="text" id="createLastName" placeholder="Efternavn"/>
+            </div>
+        </div>
+        <div class="field-wrap">
+            <input type="text" id="createUserName" placeholder="Brugernavn"/>
+        </div>
+        <div class="field-wrap">
+            <input type="text" id="createEmail" placeholder="E-mail"/>
+        </div>
+        <div class="field-wrap">
+            <input type="password" id="createPassword" placeholder="Adgangskode"/>
+        </div>
+        <button type="submit" id="btnCreateUser" class="button button-block"/>Forsæt</button>
+        </form>
     </div>
-
-    <table class="table">
-        <thead>
-        <th>Titel</th>
-        <th>Forfatter</th>
-        <th>Udgiver</th>
-        <th>Version</th>
-        <th>Pris Academic Books</th>
-        <th>Pris SAXO</th>
-        <th>Pris CDON</th>
-        <th>ISBN</th>
-        <th>BogID</th>
-        </thead>
-
-        <tbody id="curriculumBookTable">
-
-        </tbody>
-    </table>
 </div>
 
-
 <script type="text/javascript" src="lib/js/jquery-3.1.1.js"></script>
-<script type="text/javascript" src="lib/js/bootstrap.js"></script>
-<script type="text/javascript" src="js/curriculumBook.page.js"></script>
 <script type="text/javascript" src="js/sdk.js"></script>
+<script type="text/javascript" src="js/signup.page.js"></script>
+<script type="text/javascript" src="lib/js/bootstrap.js"></script>
 
 </body>
 
