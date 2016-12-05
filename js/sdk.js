@@ -41,7 +41,7 @@ var SDK = {
             SDK.request({method:"GET", url: "/curriculum"}, cb);
         },
         getCurriculumBook: function (cb) {
-            SDK.request({method:"GET", url: "/curriculum/id/book"}, cb);
+            SDK.request({method:"GET", url: "/curriculum/curriculumID/book"}, cb);
 
         }
     },

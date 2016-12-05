@@ -10,6 +10,38 @@
 
 <body>
 
+<!-- Modal -->
+<div class="modal fade" id="showBooksModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                    <th>Titel</th>
+                    <th>Forfatter</th>
+                    <th>Udgiver</th>
+                    <th>Version</th>
+                    <th>Pris Academic Books</th>
+                    <th>Pris SAXO</th>
+                    <th>Pris CDON</th>
+                    <th>ISBN</th>
+                    <th>BogID</th>
+                    </thead>
+                    <tbody id="booksTableBody"></tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Luk</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <!-- Det her er min navbar -->
 <nav class="navbar navbar-default">
@@ -44,8 +76,6 @@
 <div class="container">
     <div class="page-header">
         <h1>Find bøger til dit semester her</h1>
-        <input type="text" id="inputCurriculum" placeholder="Indtast pensumliste ID"/>
-        <button type="submit" id="btnCurriculumID" class="button button-block"/>Find</button>
     </div>
 
     <table class="table">
@@ -54,6 +84,7 @@
         <th>Skole</th>
         <th>Studieretning</th>
         <th>Semester</th>
+        <th>Vis bøger</th>
         </thead>
 
         <tbody id="curriculumTableBody">

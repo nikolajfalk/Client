@@ -6,11 +6,12 @@ $(document).ready(function () {
         var curriculumID = $("#inputCurriculum").val();
 
         SDK.Curriculum.getCurriculumBook(curriculumID, function (err, data) {
+            if (err) throw err;
 
-            var $booksTableBody = $("#curriculumBookTable");
-            decrypted.forEach(function (book, i) {
+                var $curriculumBookTable = $("#curriculumBookTable");
+                decrypted.forEach(function (book, i) {
 
-                $booksTableBody.append(
+                $curriculumBookTable.append(
                     "<tr>" +
                     "<td>" + book.title + "</td>" +
                     "<td>" + book.author + "</td>" +
@@ -23,6 +24,7 @@ $(document).ready(function () {
                     "<td>" + book.bookID + "</td>" +
                     "</tr>");
             });
+            window.location.href = "curriculumBook.html";
         });
     });
 });

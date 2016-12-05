@@ -7,7 +7,6 @@ $(document).ready(function () {
         var decrypted = encryptDecrypt(data);
         decrypted = JSON.parse(decrypted);
 
-
         var $booksTableBody = $("#booksTableBody");
         decrypted.forEach(function (book, i) {
 
