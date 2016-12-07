@@ -152,11 +152,32 @@ body:before {
     transition: all 0.3 ease;
     cursor: pointer;
 }
-.page-header #inputCurriculum {
-
-}
-.page-header #curriculumHeader {
-
+ #showCBbtn {
+     outline: 0;
+     background: #EF3B3A;
+     width: 25%;
+     border: 0;
+     color: #FFFFFF;
+     font-size: 14px;
+     cursor: pointer;
+ }
+ #btnUpdateUser{
+     outline: 0;
+     background: #EF3B3A;
+     width: 10%;
+     border: 0;
+     color: #FFFFFF;
+     font-size: 14px;
+     cursor: pointer;
+ }
+#btnDeleteUser{
+    outline: 0;
+    background: #EF3B3A;
+    width: 10%;
+    border: 0;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 

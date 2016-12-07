@@ -10,6 +10,50 @@
 
 <body>
 
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Opdater bruger</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form">
+                    <div class="top-row">
+                        <div class="field-wrap">
+                            <label>Fornavn</label>
+                            <input type="text" id="updateFirstName"/>
+                        </div>
+                        <div class="field-wrap">
+                            <label>Efternavn</label>
+                            <input type="text" id="updateLastName"/>
+                        </div>
+                    </div>
+                    <div class="field-wrap">
+                        <label>Brugernavn</label>
+                        <input type="text" id="updateUserName"/>
+                    </div>
+                    <div class="field-wrap">
+                        <label>Email</label>
+                        <input type="text" id="updateEmail"/>
+                    </div>
+                    <div class="field-wrap">
+                        <label>Adgangskode</label>
+                        <input type="text" id="updatePassword" placeholder="Adgangskode"/>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="closeModal">Fortryd</button>
+                <button type="button" class="btn btn-primary" id="btnChangeUser">Opdater</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -29,7 +73,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="frontPage.html">Forside <span class="sr-only">(current)</span></a></li>
                 <li><a href="books.html">Bøger</a>
-                <li><a  href="curriculum.html">Pensumlister</a>
+                <li><a href="curriculum.html">Pensumlister</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -41,35 +85,40 @@
 </nav>
 
 <div class="container">
-    <div class="form">
-        <h1>Opret en bruger gratis</h1>
-        <div class="top-row">
-            <div class="field-wrap">
-                <input type="text" id="createFirstName" placeholder="Fornavn"/>
-            </div>
-            <div class="field-wrap">
-                <input type="text" id="createLastName" placeholder="Efternavn"/>
-            </div>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Din bruger</h3>
         </div>
-        <div class="field-wrap">
-            <input type="text" id="createUserName" placeholder="Brugernavn"/>
+        <div class="panel-body">
+
+            <table class="table table-striped">
+                <thead>
+                <th>Fornavn</th>
+                <th>Efternavn</th>
+                <th>Brugernavn</th>
+                <th>Email</th>
+                </thead>
+                <tbody id="userTableBody">
+
+                </tbody>
+            </table>
+
+            <hr>
+            <button type="submit" id="btnUpdateUser" data-toggle="modal" data-target="#myModal"/>
+            Opdater bruger</button>
+            <button type="submit" id="btnDeleteUser"/>
+            Slet bruger</button>
         </div>
-        <div class="field-wrap">
-            <input type="text" id="createEmail" placeholder="E-mail"/>
-        </div>
-        <div class="field-wrap">
-            <input type="password" id="createPassword" placeholder="Adgangskode"/>
-        </div>
-        <button type="submit" id="btnCreateUser" class="button button-block"/>Forsæt</button>
-        </form>
     </div>
+
+    <script type="text/javascript" src="lib/js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/sdk.js"></script>
+    <script type="text/javascript" src="js/settings.page.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap.js"></script>
+
 </div>
-
-<script type="text/javascript" src="lib/js/jquery-3.1.1.js"></script>
-<script type="text/javascript" src="js/sdk.js"></script>
-<script type="text/javascript" src="js/signup.page.js"></script>
-<script type="text/javascript" src="lib/js/bootstrap.js"></script>
-
 </body>
+
 
 </html>

@@ -19,7 +19,7 @@ $(document).ready(function () {
                 "<td>" + curriculum.school + "</td>" +
                 "<td>" + curriculum.education + "</td>" +
                 "<td>" + curriculum.semester + "</td>" +
-                "<td><button class='showBooksButton' data-curriculumId=" + curriculum.curriculumID + "> Vis</button></td>" +
+                "<td><button id='showCBbtn' class='showBooksButton' data-curriculumId=" + curriculum.curriculumID + "> Vis</button></td>" +
                 "</tr>");
         });
 
