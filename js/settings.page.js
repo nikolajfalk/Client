@@ -22,7 +22,7 @@ $(document).ready(function () {
             "<td>" + decrypted.email + "</td>" +
             "<td>" + decrypted.userName + "</td>" +
             "</tr>");
-
+        });
 
         $('#btnChangeUser').on('click', function () {
 
@@ -36,12 +36,30 @@ $(document).ready(function () {
 
 
             SDK.User.edit(decrypted, function (err, data) {
+                if (err) throw err;
 
                 alert("Brugeren blev ændret")
             })
         });
-    })
+
+
+    $("#btnDeleteUser").on("click", function (event) {
+        event.preventDefault();
+
+        var userDelete = window.confirm("Er du sikker på du vil slette din konto?");
+
+        if (userDelete) {
+            SDK.User.delete(function () {
+                window.location.href = "index.html";
+                alert("Slettet");
+
+            });
+        }
+    });
 });
+
+
+
 
 
 

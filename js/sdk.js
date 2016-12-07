@@ -36,14 +36,37 @@ var SDK = {
             SDK.request({method: "POST", url: "/user", data: data}, cb);
         },
         currentUser: function (cb) {
-            SDK.request({method: "GET", url: "/user/currentuser", headers: {"authorization" : SDK.Storage.load("token")}}, cb);
+            SDK.request({
+                method: "GET",
+                url: "/user/currentuser",
+                headers: {"authorization": SDK.Storage.load("token")}
+            }, cb);
         },
-        delete: function () {
-            SDK.request({method: "DELETE", url: "/user"})
+        delete: function (cb) {
+            SDK.User.currentUser(function (err, data) {
+                if (err) throw err;
+                var decrypted = encryptDecrypt(data);
+                decrypted = JSON.parse(decrypted);
+                var userid = decrypted.userID;
+                SDK.request({
+                    method: "PUT",
+                    url: "/user/delete/" + userid,
+                    headers: {"authorization": SDK.Storage.load("token")}
+                }, cb);
+            })
         },
-        edit: function (decrypted, cb) {
-
-            SDK.request({method: "PUT", url: "/user/userid", data : decrypted}, cb)
+        edit: function (userid, cb) {
+            SDK.User.currentUser(function (err, data) {
+                if (err) throw err;
+                var decrypted = encryptDecrypt(data);
+                decrypted = JSON.parse(decrypted);
+                var userid = decrypted.userID;
+                SDK.request({
+                    method: "PUT",
+                    url: "/user" + userid,
+                    headers: {"authorization": SDK.Storage.load("token")}
+                }, cb);
+            })
         }
     },
     Curriculum: {
@@ -93,14 +116,7 @@ var SDK = {
         }
     }
 };
-function encryptDecrypt(input) {
-    var key = ['A', 'B', 'C'];
-    var out = "";
-    for (var i = 0; i < input.length; i++) {
-        out += (String.fromCharCode(((input.charAt(i)).charCodeAt(0) ^ (key[i % key.length]).charCodeAt(0))));
-    }
-    return out;
-}
+
 $("#btnLogout").on("click", function () {
     SDK.logOut();
     window.location.href = "index.html";
