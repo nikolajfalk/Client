@@ -22,26 +22,26 @@ $(document).ready(function () {
             "<td>" + decrypted.email + "</td>" +
             "<td>" + decrypted.userName + "</td>" +
             "</tr>");
-        });
+    });
+// Change User function
 
-        $('#btnChangeUser').on('click', function () {
+    $('#btnChangeUser').on('click', function () {
+            debugger;
 
-            decrypted = {
-                firstName: $('#updateFirstName').val(),
-                lastName: $('#updateLastName').val(),
-                userName: $('#updateUserName').val(),
-                email: $('#updateEmail').val(),
-                password: $('#updatePassword').val(),
+            var user = {
+                firstName: $("#updateFirstName").val(),
+                lastName: $("#updateLastName").val(),
+                userName: $("#updateUserName").val(),
+                email: $("#updateEmail").val()
             };
-
-
-            SDK.User.edit(decrypted, function (err, data) {
-                if (err) throw err;
-
+            //var userID = JSON.stringify(user);
+            SDK.User.edit(user, function () {
                 alert("Brugeren blev ændret")
+                window.location.href = "settings.html";
             })
         });
 
+// Delete User function
 
     $("#btnDeleteUser").on("click", function (event) {
         event.preventDefault();

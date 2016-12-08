@@ -36,14 +36,10 @@ var SDK = {
             SDK.request({method: "POST", url: "/user", data: data}, cb);
         },
         currentUser: function (cb) {
-            SDK.request({
-                method: "GET",
-                url: "/user/currentuser",
-                headers: {"authorization": SDK.Storage.load("token")}
-            }, cb);
+            SDK.request({method: "GET", url: "/user/currentuser", headers: {"authorization" : SDK.Storage.load("token")}}, cb);
         },
         delete: function (cb) {
-            SDK.User.currentUser(function (err, data) {
+            SDK.User.currentUser(function(err, data) {
                 if (err) throw err;
                 var decrypted = encryptDecrypt(data);
                 decrypted = JSON.parse(decrypted);
@@ -55,15 +51,15 @@ var SDK = {
                 }, cb);
             })
         },
-        edit: function (userid, cb) {
-            SDK.User.currentUser(function (err, data) {
+        edit: function (useredit, cb) {
+            SDK.User.currentUser(function(err, data) {
                 if (err) throw err;
                 var decrypted = encryptDecrypt(data);
                 decrypted = JSON.parse(decrypted);
                 var userid = decrypted.userID;
                 SDK.request({
                     method: "PUT",
-                    url: "/user" + userid,
+                    url: "/user/" + userid, data: useredit,
                     headers: {"authorization": SDK.Storage.load("token")}
                 }, cb);
             })
