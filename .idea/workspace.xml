@@ -365,7 +365,7 @@
       <workItem from="1480527961723" duration="23000" />
       <workItem from="1480591887274" duration="4018000" />
       <workItem from="1480619427697" duration="933000" />
-      <workItem from="1480926657584" duration="46611000" />
+      <workItem from="1480926657584" duration="46616000" />
     </task>
     <task id="LOCAL-00001" summary="CreateUser virker!">
       <created>1479736757806</created>
@@ -493,11 +493,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481626847338</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Kommentering af hele klientet er færdig.">
+      <created>1481658784903</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1481658784903</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144101000" />
+    <option name="totallyTimeSpent" value="144106000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
