@@ -1,15 +1,15 @@
 $(document).ready(function () {
 
-    //Fires on page-load
+    //Metoden til at hente alle bøgerne.
     SDK.Book.getAll(function (err, data) {
         if (err) throw err;
-
+        //Bøgerne bliver her dekrypteret.
         var decrypted = encryptDecrypt(data);
         decrypted = JSON.parse(decrypted);
-
+        //Tabellen bøgerne skal stå i hentes.
         var $booksTableBody = $("#booksTableBody");
         decrypted.forEach(function (book, i) {
-
+            //Her defineres der hvor hvilke værdier skal stå.
             $booksTableBody.append(
                 "<tr>" +
                 "<td>" + book.title + "</td>" +

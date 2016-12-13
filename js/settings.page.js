@@ -1,20 +1,21 @@
 $(document).ready(function () {
 
-    //Fires on page-load
+    //Her kaldes funktionen, der skal give mig oplysningerne på den nuværende bruger ud fra den tildelte token.
     SDK.User.currentUser(function (err, data) {
         if (err) throw err;
-
+        // her dekrypteres bruger objektet.
         var decrypted = encryptDecrypt(data);
         decrypted = JSON.parse(decrypted);
-
+        //Her tilføjes informationerne på brugeren til en tabel, så bruger let kan se sine oplysninger, hvis man ønsker
+        //at ændre dem.
         document.getElementById("updateFirstName").value = decrypted.firstName;
         document.getElementById("updateLastName").value = decrypted.lastName;
         document.getElementById("updateUserName").value = decrypted.userName;
         document.getElementById("updateEmail").value = decrypted.email;
 
-
+        //Her kaldes en ny tabel, der er at finde i min modal. Tabellen åbnes når der klikkes på knappen "Opdater bruger"
         var $userTableBody = $("#userTableBody");
-
+        //Igen tilføjes brugerens oplysninger, men denne gang i modal tabellen.
         $userTableBody.append(
             "<tr>" +
             "<td>" + decrypted.firstName + "</td>" +
@@ -23,11 +24,9 @@ $(document).ready(function () {
             "<td>" + decrypted.userName + "</td>" +
             "</tr>");
     });
-// Change User function
-
+    //Her foretages ændringen. Funktionen tager de nye indtastede værdier i tabellen, og ændre brugeren, hvis det lykkedes
+    //kommer der en alert med en bekræftelse. Brugerens nye opslysninger kan nu ses i den første tabel.
     $('#btnChangeUser').on('click', function () {
-            debugger;
-
             var user = {
                 firstName: $("#updateFirstName").val(),
                 lastName: $("#updateLastName").val(),
@@ -40,9 +39,8 @@ $(document).ready(function () {
                 window.location.href = "settings.html";
             })
         });
-
-// Delete User function
-
+    //Slet bruger funktionen, der sletter den nuværende bruger ved klik på knappen "Slet bruger".
+    //Inden brugeren slette kommer der bekræftelse. Slettes brugeren returneres man til startsiden.
     $("#btnDeleteUser").on("click", function (event) {
         event.preventDefault();
 
