@@ -1,3 +1,9 @@
+
+/**
+ * Klasse der styrer min SDK, altså alle mine metoder. Hver metode er koblet til et endpoint på min server.
+ *
+ */
+
 var SDK = {
     serverURL: "http://localhost:8080/server2_0_war_exploded",
     request: function (options, cb) {

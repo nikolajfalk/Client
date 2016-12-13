@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
     $("#btnCreateUser").on("click", function () {
-
             var user = {
                 firstName: $("#createFirstName").val(),
                 lastName: $("#createLastName").val(),

@@ -32,9 +32,9 @@ $(document).ready(function () {
                 firstName: $("#updateFirstName").val(),
                 lastName: $("#updateLastName").val(),
                 userName: $("#updateUserName").val(),
-                email: $("#updateEmail").val()
+                email: $("#updateEmail").val(),
+                password: $("#updatePassword").val()
             };
-            //var userID = JSON.stringify(user);
             SDK.User.edit(user, function () {
                 alert("Brugeren blev ændret")
                 window.location.href = "settings.html";
@@ -50,9 +50,8 @@ $(document).ready(function () {
 
         if (userDelete) {
             SDK.User.delete(function () {
-                window.location.href = "index.html";
                 alert("Slettet");
-
+                window.location.href = "index.html";
             });
         }
     });
